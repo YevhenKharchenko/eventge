@@ -1,0 +1,105 @@
+.process-section {
+}
+
+.process-bg-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+  }
+}
+
+.process-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding-left: 88px;
+  }
+}
+
+.process-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.process-text-wrapper {
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 616px;
+  }
+}
+
+.process-title {
+  margin-bottom: 60px;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    align-items: start;
+  }
+}
+
+.process-list-item {
+  @include media(desktop) {
+  }
+}
+
+.process-item-number {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 275;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 26px;
+    line-height: 1.61538;
+  }
+}
+
+.process-item-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #000;
+  margin-bottom: 6px;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.process-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #2a2a2a;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
