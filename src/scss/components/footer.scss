@@ -1,20 +1,74 @@
 .footer {
-  background: #050507;
-  border-top: 1px solid #565656;
-  padding: 60px 0;
+  background: #0b081f;
 
   @include media(desktop) {
+  }
+}
+
+.footer-bg-wrapper {
+  padding-top: 56px;
+  padding-bottom: 48px;
+  background-image: url(../img/footer/footer-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 38px;
+    padding-bottom: 221px;
+    background-image: url(../img/footer/footer-bg-desk.png);
   }
 }
 
 .footer-container {
 }
 
-.footer-nav {
-  margin-bottom: 32px;
+.footer-top-email-link {
+  display: none;
 
   @include media(desktop) {
-    margin-bottom: 60px;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+}
+
+.footer-nav-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-email-link {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    margin-bottom: 0;
+    order: 3;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 36px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    order: 2;
   }
 }
 
@@ -22,12 +76,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1em;
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: end;
-    gap: 74px;
+    justify-content: center;
   }
 }
 
@@ -35,29 +88,40 @@
 }
 
 .footer-link {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.57143;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
   text-align: center;
   color: #fff;
 
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 1.5;
+  }
+}
+
+.footer-span {
+  display: none;
+
+  @include media(desktop) {
+    display: inline;
   }
 }
 
 .footer-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 400;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.57143;
+  color: #fff;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  max-width: 168px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 1.5;
+    @include media(desktop) {
+      font-size: 18px;
+      max-width: 216px;
+      margin: 0;
+      order: 1;
+    }
   }
 }
