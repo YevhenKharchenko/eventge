@@ -1,5 +1,5 @@
 .cookie-banner-section {
-  background: #f6f7f9;
+  background: #0b081f;
   width: 100%;
   max-width: 375px;
   padding: 40px 16px;
@@ -14,34 +14,33 @@
 
   @include media(desktop) {
     max-width: 1440px;
-    padding: 40px 108px;
   }
 }
 
 .cookie-banner-content-wrapper {
   @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
   }
 }
 
 .cookie-banner-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.57143;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   text-align: center;
-  color: #2a2a2a;
-  margin-bottom: 20px;
+  color: #fff;
+  max-width: 313px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    max-width: 808px;
-    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: max-content;
+    margin-bottom: 39px;
   }
 }
 
@@ -50,46 +49,48 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 
   @include media(desktop) {
     flex-direction: row;
-    width: 100%;
-    max-width: 392px;
-  }
-}
-
-.cookie-accept-btn {
-  background: #ffe646;
-  border-radius: 8px;
-  padding: 16px 32px;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #2a2a2a;
-  width: 100%;
-
-  @include media(desktop) {
-    max-width: 184px;
   }
 }
 
 .cookie-decline-btn {
-  border: 1px solid #141414;
-  border-radius: 8px;
+  border: 3px solid #ff6a00;
+  border-radius: 12px;
   padding: 16px 32px;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #2a2a2a;
+  color: #fff;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
-    max-width: 184px;
+    max-width: 302px;
+    height: 51px;
+  }
+}
+
+.cookie-accept-btn {
+  background: #ff6a00;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 302px;
+    height: 51px;
   }
 }
 

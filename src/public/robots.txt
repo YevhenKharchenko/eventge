@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://elevzio.site/sitemap.xml
+Sitemap: https://eventge.pro/sitemap.xml

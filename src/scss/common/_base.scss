@@ -46,7 +46,6 @@ html {
   scroll-margin-top: 30px;
 
   @include media(desktop) {
-    scroll-margin-top: 20px;
   }
 }
 
@@ -56,23 +55,10 @@ html {
   font-size: 20px;
   text-align: center;
   color: #fff;
-  margin-bottom: 56px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
     font-size: 28px;
     margin-bottom: 54px;
-  }
-}
-
-.section-subtitle {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 32px;
-
-  @include media(desktop) {
-    font-size: 20px;
-    margin-bottom: 39px;
   }
 }

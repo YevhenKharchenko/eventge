@@ -1,107 +1,68 @@
 .contact-section {
-  background: #2a2a2a;
 }
 
 .contact-bg-wrapper {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 88px;
+  padding-bottom: 88px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/contact/contact-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 197px;
+    padding-bottom: 123px;
     max-width: 1440px;
+    background-image: url(../img/contact/contact-bg-desk.png);
   }
 }
 
 .contact-container {
-  padding: 0;
-
-  @include media(desktop) {
-    padding-left: 88px;
-  }
-}
-
-.contact-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 92px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 32px;
-  }
-}
-
-.contact-text-wrapper {
-  max-width: 343px;
-
-  @include media(desktop) {
-    max-width: 508px;
-  }
 }
 
 .contact-title {
-  color: #fff;
-  margin-bottom: 8px;
-}
-
-.contact-subtitle {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
-  margin-bottom: 40px;
+  color: #000;
+  margin-bottom: 59px;
 
   @include media(desktop) {
-    font-size: 18px;
-    line-height: 1.55556;
+    margin-bottom: 54px;
   }
 }
 
-.contact-email-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.57143;
-  color: #949494;
-  margin-bottom: 8px;
+.contact-link-wrapper {
+  display: flex;
+  flex-direction: column;
 
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 1.5;
+    justify-content: center;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .contact-email-link {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #fff;
-  display: block;
-  margin-bottom: 40px;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 1em;
+  color: #000;
 
   @include media(desktop) {
-    font-size: 24px;
-    line-height: 1.33333;
+    font-size: 22px;
   }
 }
 
-.contact-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.57143;
-  color: #fff;
+.contact-partnership-link {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
 
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 22px;
   }
 }
